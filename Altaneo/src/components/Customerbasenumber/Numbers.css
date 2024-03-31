@@ -1,0 +1,26 @@
+.numbers {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+   /* .number {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    -radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }  */
+  
+  .count-up {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  .heading {
+    text-align: center;
+  }
+    

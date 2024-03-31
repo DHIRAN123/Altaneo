@@ -1,0 +1,42 @@
+Updated ExportCredits.css
+
+.export-credits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add spacing between cards */
+  }
+  
+  .export-credits-card {
+    overflow: hidden;
+    height: auto; /* Set initial height */
+    transition: height 0.3s ease, box-shadow 0.3s ease; /* Add transition effect for smooth height change and box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for card elevation */
+    border-radius: 12px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+  
+  .export-credits-card:hover {
+    height: auto; /* Expand card height on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover for elevation effect */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px); /* Add vertical animation */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Reset vertical animation */
+    }
+  }
+  
+  .export-credits-card:hover .card-body {
+    animation: fadeIn 0.5s ease; /* Apply fade-in animation to card body on hover */
+  }
+  
+  /* Additional animations for card title */
+  .export-credits-card .card-title {
+    animation: fadeIn 0.5s ease; /* Apply fade-in animation to card title on hover */
+  }
+  

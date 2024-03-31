@@ -1,0 +1,74 @@
+nav{
+  width:100%;
+  /* background:#fffafa; */
+  color:#5a7cf7;
+  padding:4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.logo{
+  width: 180px;
+
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+/* Add this CSS rule to change color to blue on hover */
+nav ul li:hover {
+/* color: rgb(31, 31, 108); */
+}
+
+.dark-nav{
+  background: #091372;
+  
+}
+.container {
+  /* Your existing styles for the navbar */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0b044d;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-trigger:hover .dropdown-content {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #091372;
+  min-width: 200px; /* Increase width for better spacing */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px 0; /* Add padding for better spacing */
+  border-radius: 5px; /* Add border radius for smoother appearance */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  color: #ffffff; /* Set text color */
+  text-decoration: none;
+  transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+.dropdown-content a:hover {
+  background-color: #1b155d; /* Change background color on hover */
+}
