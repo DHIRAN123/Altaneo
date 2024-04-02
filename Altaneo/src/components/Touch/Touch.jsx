@@ -15,7 +15,7 @@ const Touch = () => {
     message: ''
   });
   
-  const [submissionStatus, setSubmissionStatus] = useState(''); // State to track submission status
+  const [submissionStatus, setSubmissionStatus] = useState(''); 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,21 +24,21 @@ const Touch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      setSubmissionStatus('Submitting...'); // Set submission status to "Submitting..."
-      const response = await axios.post('http://localhost:8080/submitContactForm', formData);
-      console.log(response.data); // Handle successful response
-      setSubmissionStatus('Submitted'); // Set submission status to "Submitted"
-      // Reset form after successful submission
+      setSubmissionStatus('Submitting...');
+            const response = await axios.post('http://localhost:8080/submitContactForm', formData);
+      console.log(response.data); 
+      setSubmissionStatus('Submitted');
+      
       setFormData({
         name: '',
         phone: '',
         email: '',
         message: ''
       });
-      setSubmissionStatus(''); // Reset submission status after successful submission
+      setSubmissionStatus(''); 
     } catch (error) {
-      console.error('Error:', error); // Handle error
-      setSubmissionStatus(''); // Reset submission status in case of error
+      console.error('Error:', error); 
+      setSubmissionStatus(''); 
     }
   };
   

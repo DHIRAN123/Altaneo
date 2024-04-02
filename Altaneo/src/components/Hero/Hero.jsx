@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
-import video from '../../assets/video.mp4'; // Provide the path to your video file
+import video from '../../assets/video.mp4'; 
 import { Link } from 'react-scroll';
 
 const Hero = () => {
