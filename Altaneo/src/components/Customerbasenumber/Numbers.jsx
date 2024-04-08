@@ -7,7 +7,7 @@ const Numbers = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5 // Trigger when at least 50% of the component is visible
+      threshold: 0.5 
     };
 
     const numberRefs = Array.from(document.querySelectorAll('.number')).map(element => {

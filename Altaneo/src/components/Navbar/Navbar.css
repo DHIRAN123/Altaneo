@@ -1,7 +1,7 @@
 nav{
   width:100%;
   /* background:#fffafa; */
-  color:#5a7cf7;
+  color:#4365e1;
   padding:4px 0;
   position: fixed;
   top: 0;
@@ -28,6 +28,7 @@ nav ul li:hover {
 
 .dark-nav{
   background: #091372;
+  background: linear-gradient(to right, #2b3c62, #0a0d27);
   
 }
 .container {
@@ -37,7 +38,7 @@ nav ul li:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0b044d;
+  background-color: #68667a;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;

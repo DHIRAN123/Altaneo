@@ -17,6 +17,11 @@ import VendorFinancing from './components/VendorFinancing/VendorFinancing';
 import CreditCard from './components/CreditCard/CreditCard';
 import Investors from './components/Investors/Investors';
 import Login from './components/Login/login';
+import Privacypolicy from './components/PrivacyPolicy/Privacypolicy';
+import RefundPolicy from './components/Refund/RefundPolicy';
+import Terms from './components/Terms/Terms';
+
+
 
 
 const App = () => {
@@ -36,6 +41,9 @@ const App = () => {
               <Route exact path='/Export-Credits' component={ExportCredits} />
               <Route exact path='/Vendor-Financing' component={VendorFinancing} />
               <Route exact path='/Credit-Card' component={CreditCard} />
+              <Route exact path='/Privacypolicy' component={Privacypolicy} />
+              <Route exact path='/Refundpolicy' component={RefundPolicy} />
+              <Route exact path='/Terms' component={Terms} />
             </Switch>
           </Route>
         </Switch>
@@ -50,7 +58,9 @@ const Home = () => (
     <div className='container'>
       <Title subTitle='Our COMMITMENTS' title='What We Offer' />
       <Solutions />
+      
       <About />
+      
       <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
       <Numbers />
       <Title subTitle='Leading Investors ' title='Valued From leading brands' />

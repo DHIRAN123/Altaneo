@@ -75,14 +75,18 @@ const Navbar = ({ onWorkingCapitalClick }) => {
           </ScrollLink>
         </li>
         <li>
-          <button className="btn">
-            <ScrollLink to="contact" smooth={true} offset={0} duration={500}>
-              Contact Us
-            </ScrollLink>
-          </button>
+          
+              <ScrollLink to="contact" smooth={true} offset={0} duration={500}>
+                Contact Us
+              </ScrollLink>
+           
         </li>
         <li>
-          <a href="/login" target="_blank" rel="noopener noreferrer">Login</a>
+          <div className="btn-square">
+            <button className="btn">
+              <a href="/login" target="_blank" rel="noopener noreferrer">Login</a>
+            </button>
+          </div>
         </li>
       </ul>
     </nav>

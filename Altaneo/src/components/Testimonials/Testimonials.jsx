@@ -1,88 +1,88 @@
-import React,{useRef} from 'react'
-import './Testimonials.css'
-import next_icon from '../../assets/next-icon.png'
-import back_icon from '../../assets/back-icon.png'
-import user_1 from '../../assets/user-1.png'
-import user_2 from '../../assets/user-2.png'
-import user_3 from '../../assets/user-3.png'
-import user_4 from '../../assets/user-4.png'
+import React, { useRef, useEffect, useState } from 'react';
+import './Testimonials.css';
+import user_1 from '../../assets/user-1.png';
+import user_2 from '../../assets/user-2.png';
+import user_3 from '../../assets/user-3.png';
+import user_4 from '../../assets/user-4.png';
 
 const Testimonials = () => {
-
   const slider = useRef();
-let tx =0;
+  let tx = 0;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slideForward = ()=>{
-if(tx > -50){
-  tx -= 25;
-}
-slider.current.style.transform = `translateX(${tx}%)`; 
-  }
-  const slideBackward = ()=>{
-    if(tx < 0){
-      tx += 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`; 
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      slideForward();
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const slideForward = () => {
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = prevIndex === 3 ? 0 : prevIndex + 1;
+      tx = -(nextIndex * 25);
+      slider.current.style.transform = `translateX(${tx}%)`;
+      return nextIndex;
+    });
+  };
 
   return (
     <div className='testimonials'>
-        <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
-        <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
-<div className='slider'>
-      <ul ref={slider}> 
-        <li>
-          <div className='slide'>
-            <div className='user-info'>
-              <img src={user_1} alt=''/>
-            <div>
-              <h3>Meenakshi pawar</h3>
-              <span>Gurugram,Haryana</span>
+      <div className='slider'>
+        <ul ref={slider}>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={user_1} alt='' />
+                <div>
+                  <h3>Meenakshi pawar</h3>
+                  <span>Gurugram, Haryana</span>
+                </div>
+              </div>
+              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
             </div>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={user_2} alt='' />
+                <div>
+                  <h3>Meenakshi pawar</h3>
+                  <span>Gurugram, Haryana</span>
+                </div>
+              </div>
+              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
             </div>
-            <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
-          </div>
-        </li>
-        <li>
-          <div className='slide'>
-            <div className='user-info'>
-              <img src={user_2} alt=''/>
-            <div>
-              <h3>Meenakshi pawar</h3>
-              <span>Gurugram,Haryana</span>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={user_3} alt='' />
+                <div>
+                  <h3>Meenakshi pawar</h3>
+                  <span>Gurugram, Haryana</span>
+                </div>
+              </div>
+              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
             </div>
+          </li>
+          <li>
+            <div className='slide'>
+              <div className='user-info'>
+                <img src={user_4} alt='' />
+                <div>
+                  <h3>Meenakshi pawar</h3>
+                  <span>Gurugram, Haryana</span>
+                </div>
+              </div>
+              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
             </div>
-            <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
-          </div>
-        </li>
-        <li>
-          <div className='slide'>
-            <div className='user-info'>
-              <img src={user_3} alt=''/>
-            <div>
-              <h3>Meenakshi pawar</h3>
-              <span>Gurugram,Haryana</span>
-            </div>
-            </div>
-            <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
-          </div>
-        </li>
-        <li>
-          <div className='slide'>
-            <div className='user-info'>
-              <img src={user_4} alt=''/>
-            <div>
-              <h3>Meenakshi pawar</h3>
-              <span>Gurugram,Haryana</span>
-            </div>
-            </div>
-            <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;

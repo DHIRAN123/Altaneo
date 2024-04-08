@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import useApi from './useApi';
 import './Touch.css';
 import msg_icon from '../../assets/msg-icon.png';
 import mail_icon from '../../assets/mail-icon.png';
@@ -14,9 +14,9 @@ const Touch = () => {
     email: '',
     message: ''
   });
-  
-  const [submissionStatus, setSubmissionStatus] = useState(''); 
 
+  const { isLoading, error, sendRequest } = useApi();
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -24,24 +24,23 @@ const Touch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      setSubmissionStatus('Submitting...');
-            const response = await axios.post('http://localhost:8080/submitContactForm', formData);
-      console.log(response.data); 
-      setSubmissionStatus('Submitted');
+      const response = await sendRequest({
+        method: 'POST',
+        url: 'http://localhost:8080/submitContactForm',
+        data: formData
+      });
       
+      console.log(response.data);
       setFormData({
         name: '',
         phone: '',
         email: '',
         message: ''
       });
-      setSubmissionStatus(''); 
     } catch (error) {
-      console.error('Error:', error); 
-      setSubmissionStatus(''); 
+      console.error('Error:', error);
     }
   };
-  
 
   return (
     <div className='contact'>
@@ -51,7 +50,7 @@ const Touch = () => {
         <ul>
           <li><img src={mail_icon} alt=""/>info@altaneofin.in</li>
           <li><img src={phone_icon} alt=""/>+91 9992278688</li>
-          <li><img src={location_icon} alt=""/>GURUGRAM <br />Minions Ventures Pvt. Ltd. (KredX) Wing ‘A’, Ground Floor, Office-1, Block- ‘A’, “SALARPURIA SOFTZONE, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore – 560103</li>
+          <li><img src={location_icon} alt=""/><b></b>GURUGRAM <br />Minions Ventures Pvt. Ltd. (KredX) Wing ‘A’, Ground Floor, Office-1, Block- ‘A’, “SALARPURIA SOFTZONE, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore – 560103</li>
           <li><img src={location_icon} alt=""/>DELHI<br/>Minions Ventures Pvt. Ltd. (KredX) Wing ‘A’, Ground Floor, Office-1, Block- ‘A’, “SALARPURIA SOFTZONE, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore – 560103</li>
         </ul>
       </div>
@@ -65,8 +64,8 @@ const Touch = () => {
         <input type="email" name='email' placeholder='Enter your Email' value={formData.email} onChange={handleChange} required/>
         <label>Write your message</label>
         <textarea name="message" rows="6" placeholder='Enter your message' value={formData.message} onChange={handleChange} required></textarea>
-        <button type='submit' className='btn dark-btn' disabled={submissionStatus === 'Submitting...' || submissionStatus === 'Submitted'}>
-          {submissionStatus || 'Submit now'} <img src={white_arrow} alt="" />
+        <button type='submit' className='btn dark-btn' disabled={isLoading}>
+          {isLoading ? 'Submitting...' : 'Submit now'} <img src={white_arrow} alt="" />
         </button>
       </form>
     </div>

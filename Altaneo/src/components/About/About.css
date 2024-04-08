@@ -6,7 +6,7 @@
     width:90%;
 }
 .about-left{
-    flex-basis:40%;
+    /* flex-basis:40%; */
 position: relative;
 }
 .about-right{

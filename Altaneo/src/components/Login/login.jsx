@@ -38,9 +38,9 @@ const Login = () => {
       <VideoContainer /> {/* Include VideoContainer component */}
       <div className={styles.loginFormContainer}>
         <h2>Login To Be Altaneofied</h2>
-        <div className={styles.loginTypeButtons}>
-          <button className={loginType === 'mobile' ? styles.active : ''} onClick={() => handleLoginTypeChange('mobile')}>Login with Mobile Number</button>
-        </div>
+        {/* <div className={styles.loginTypeButtons}>
+          <button className={loginType === 'mobile' ? styles.active : ''} onClick={() => handleLoginTypeChange('mobile')}>All You Need Is Mobile</button>
+        </div> */}
         <form onSubmit={handleSubmit} className={styles.loginForm}>
           <input type="tel" placeholder="Mobile Number" value={mobileNumber} onChange={handleMobileNumberChange} />
           {!showOtpInput && <button type="submit">Send OTP</button>}
@@ -50,6 +50,7 @@ const Login = () => {
             <input type="text" maxLength="4" placeholder="Enter OTP" value={otp} onChange={handleOtpChange} />
             <button type="submit">Verify OTP</button>
           </form>
+
         )}
       </div>
     </div>

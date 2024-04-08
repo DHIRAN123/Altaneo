@@ -7,12 +7,15 @@ import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
 import './InvoiceDiscountingPage.css';
+import Services from '../Services/Services';
+import BothScreens from '../Screens/BothScreens';
+
 
 const InvoiceDiscountingPage = () => {
   return (
     <div className="invoice-discounting-container">
       <div className="container">
-        <Title subTitle="Why Altaneo For Bill Discounting" title="We Offer Wide Ranges" />
+        <Title subTitle="Altaneo For Bill Discounting" title="We Offer Wide Ranges" />
 
         {/* Card with hover effect */}
         <div className="invoice-discounting-card">
@@ -39,11 +42,16 @@ const InvoiceDiscountingPage = () => {
             <p className="card-text">Gain insights and control over your expenses with Altaneo's corporate credit card solutions. Track spending, monitor transactions, and optimize cash flow with advanced expense management tools.</p>
           </div>
         </div>
+    
 
-        <Title subTitle="Businesses Altaneofied" title="Where are you?" />
-        <Partner />
+        <BothScreens/>
+    
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
         <Numbers />
+        <Services/>
+        <Title subTitle="Businesses Altaneofied" title="Where are you?" />
+
+<Partner />
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />

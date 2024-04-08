@@ -6,6 +6,7 @@ import Numbers from '../Customerbasenumber/Numbers';
 import Touch from '../Touch/Touch';
 import Footer from '../Footer/Footer';
 import './VendorFinancing.css'; 
+import VendorServices from '../Services/VendorServices';
 const VendorFinancing = () => {
   return (
     <div>
@@ -35,7 +36,7 @@ const VendorFinancing = () => {
             </ul>
           </div>
         </div>
-
+<VendorServices/>
         <Title subTitle='Businesses Altaneofied' title='Where are you?' />
         <Partner />
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />

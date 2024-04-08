@@ -1,42 +1,99 @@
-Updated ExportCredits.css
+\/* ExportCreditCard.css */
 
 .export-credits-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Add spacing between cards */
-  }
-  
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow border */
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted hover effect */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-text li {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
   .export-credits-card {
-    overflow: hidden;
-    height: auto; /* Set initial height */
-    transition: height 0.3s ease, box-shadow 0.3s ease; /* Add transition effect for smooth height change and box-shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for card elevation */
-    border-radius: 12px; /* Add rounded corners */
-    margin-bottom: 20px; /* Add spacing between cards */
+    margin-bottom: 10px;
   }
-  
-  .export-credits-card:hover {
-    height: auto; /* Expand card height on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover for elevation effect */
+
+  .card-body {
+    padding: 15px;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px); /* Add vertical animation */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Reset vertical animation */
-    }
+
+  .card-title {
+    font-size: 1.1rem;
   }
-  
-  .export-credits-card:hover .card-body {
-    animation: fadeIn 0.5s ease; /* Apply fade-in animation to card body on hover */
+
+  .card-text {
+    font-size: 0.9rem;
   }
-  
-  /* Additional animations for card title */
-  .export-credits-card .card-title {
-    animation: fadeIn 0.5s ease; /* Apply fade-in animation to card title on hover */
+
+  .btn-primary {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
-  
+}
+
+@media screen and (max-width: 576px) {
+  .export-credits-container {
+    padding: 15px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .btn-primary {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+}

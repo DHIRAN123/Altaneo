@@ -5,6 +5,9 @@ import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
 import './ExportCredits.css'; 
+import ExportCreditService from '../Services/ExportCreditService';
+
+
 
 const ExportCredits = () => {
   return (
@@ -65,8 +68,10 @@ const ExportCredits = () => {
             </ul>
           </div>
         </div>
+        
         <Title subTitle='Businesses Altaneofied' title='Where are you?' />
         <Partner />
+        <ExportCreditService/>
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
         <Numbers />
         <Title subTitle='Contact Us' title='Get in Touch' />

@@ -6,7 +6,7 @@
       -webkit-transition: all .35s ease;
       transition: all .35s ease;
       display: flex;
-      
+
   }
   .box:after,
   .box:before {

@@ -6,6 +6,9 @@ import Numbers from '../Customerbasenumber/Numbers';
 import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
+
+import DualPaneLayout from '../DualPaneLayout/DualPaneLayout';
+import CreditCardServicebox from '../Services/CreditCardServicebox';
 const CreditCard = () => {
   return (
     <div>
@@ -37,8 +40,13 @@ const CreditCard = () => {
         </div>
 
       </div>
+      <Title subTitle='Introducing Altaneo: Revolutionizing Corporate Spending' title='' />
+        
+      <DualPaneLayout/>
+      <CreditCardServicebox/>
       <Title subTitle='Businesses Altaneofied' title='Where are you?' />
         <Partner />
+        
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
         <Numbers />
         <Title subTitle='Contact Us' title='Get in Touch' />
