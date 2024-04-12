@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import { Link as ScrollLink } from 'react-scroll';
+import menu_icon from '../../assets/menu-icon.png'
 
 const Navbar = ({ onWorkingCapitalClick }) => {
   const [sticky, setSticky] = useState(false);
@@ -27,12 +28,17 @@ const Navbar = ({ onWorkingCapitalClick }) => {
     setDropdownVisible(false);
   };
 
+  const[mobileMenu,setMobileMenu] = useState(false);
+  const toggleMenu = ()=>{
+mobileMenu? setMobileMenu(false) : setMobileMenu(true);
+  }
+
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       <a href="/">
         <img src={logo} alt="" className="logo" />
       </a>
-      <ul>
+      <ul className={mobileMenu?'':'hide-mobile-menu'}>
         <li>
           {/* <ScrollLink to="hero" smooth={true} offset={0} duration={500}>
             Enterprise
@@ -89,7 +95,10 @@ const Navbar = ({ onWorkingCapitalClick }) => {
           </div>
         </li>
       </ul>
+      
+      <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu}/>
     </nav>
+
   );
 };
 

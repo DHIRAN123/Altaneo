@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
 import './ExportCredits.css'; 
 import ExportCreditService from '../Services/ExportCreditService';
-
+import Bot from '../Bot/bot';
 
 
 const ExportCredits = () => {
@@ -77,6 +77,7 @@ const ExportCredits = () => {
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />
+        <Bot/>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import Partner from '../Partners/Partners';
 import './InvoiceDiscountingPage.css';
 import Services from '../Services/Services';
 import BothScreens from '../Screens/BothScreens';
+import Bot from '../Bot/bot';
 
 
 const InvoiceDiscountingPage = () => {
@@ -55,6 +56,7 @@ const InvoiceDiscountingPage = () => {
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />
+        <Bot/>
       </div>
     </div>
   );

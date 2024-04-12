@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Privacypolicy.css';
 import Title from '../Title/Title';
+import Bot from '../Bot/bot';
 
 const Privacypolicy = () => {
   return (
@@ -106,6 +107,7 @@ const Privacypolicy = () => {
         </div>
       </div>
       <Footer/>
+      <Bot/>
     </div>
   );
 };

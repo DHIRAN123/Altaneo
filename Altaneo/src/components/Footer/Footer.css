@@ -30,9 +30,7 @@ ul {
   border-top-right-radius: 50%;
 }
 
-.footer-cta {
-  border-bottom: 1px solid #373636;
-}
+
 
 .single-cta i {
   color: #2414ff;
@@ -171,12 +169,9 @@ ul {
   color: #fff;
 }
 
-
-
-
 .copyright-area {
   background: #202020;
-  padding: 25px 0;
+  padding: 14px 0;
 }
 
 .copyright-text p {
@@ -201,4 +196,89 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+@media screen and (max-width: 768px) {
+  .single-cta i {
+    font-size: 24px;
+  }
+
+  .cta-text h4 {
+    font-size: 18px;
+  }
+
+  .cta-text span {
+    font-size: 14px;
+  }
+
+  .footer-widget-heading h3 {
+    font-size: 18px;
+  }
+
+  .footer-widget-heading h3::before {
+    bottom: -10px;
+  }
+
+  .footer-widget ul li {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .footer-social-icon span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-social-icon a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .footer-social-icon i {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+  }
+
+  .footer-text p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footer-menu li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-cta i {
+    font-size: 20px;
+  }
+
+  .cta-text h4 {
+    font-size: 16px;
+  }
+
+  .cta-text span {
+    font-size: 12px;
+  }
+
+  .footer-widget-heading h3 {
+    font-size: 16px;
+  }
+
+  .footer-widget-heading h3::before {
+    bottom: -8px;
+  }
+
+  .footer-text p {
+    font-size: 12px;
+    margin-right: 0;
+  }
+
+  .footer-menu li a {
+    font-size: 12px;
+  }
 }

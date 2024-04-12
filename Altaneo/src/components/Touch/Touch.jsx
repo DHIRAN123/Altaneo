@@ -54,7 +54,7 @@ const Touch = () => {
           <li><img src={location_icon} alt=""/>DELHI<br/>Minions Ventures Pvt. Ltd. (KredX) Wing ‘A’, Ground Floor, Office-1, Block- ‘A’, “SALARPURIA SOFTZONE, Bellandur Village, Varthur Hobli, Bangalore South Taluk, Outer Ring Road, Bangalore – 560103</li>
         </ul>
       </div>
-      <div className='contact-col'></div>
+      <div className='contact-form'></div>
       <form onSubmit={handleSubmit}>
         <label>Your name</label>
         <input type="text" name='name' placeholder='Enter your name' value={formData.name} onChange={handleChange} required/>

@@ -20,6 +20,9 @@ import Login from './components/Login/login';
 import Privacypolicy from './components/PrivacyPolicy/Privacypolicy';
 import RefundPolicy from './components/Refund/RefundPolicy';
 import Terms from './components/Terms/Terms';
+import Bot from './components/Bot/bot';
+
+
 
 
 
@@ -58,7 +61,7 @@ const Home = () => (
     <div className='container'>
       <Title subTitle='Our COMMITMENTS' title='What We Offer' />
       <Solutions />
-      
+     
       <About />
       
       <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
@@ -74,6 +77,7 @@ const Home = () => (
       <Title subTitle='Contact Us' title='Get in Touch' />
       <Touch />
       <Footer />
+      <Bot/>
     </div>
   </>
 );

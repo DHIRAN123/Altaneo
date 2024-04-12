@@ -122,6 +122,7 @@ const Terms = () => {
         </div>
       </div>
       <Footer />
+      <Terms/>
     </div>
   );
 };

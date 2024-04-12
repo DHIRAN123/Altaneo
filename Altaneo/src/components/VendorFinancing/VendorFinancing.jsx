@@ -7,6 +7,7 @@ import Touch from '../Touch/Touch';
 import Footer from '../Footer/Footer';
 import './VendorFinancing.css'; 
 import VendorServices from '../Services/VendorServices';
+import Bot from '../Bot/bot';
 const VendorFinancing = () => {
   return (
     <div>
@@ -44,6 +45,7 @@ const VendorFinancing = () => {
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />
+        <Bot/>
       </div>
     </div>
   );

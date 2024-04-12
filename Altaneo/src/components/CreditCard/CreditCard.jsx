@@ -9,6 +9,7 @@ import Partner from '../Partners/Partners';
 
 import DualPaneLayout from '../DualPaneLayout/DualPaneLayout';
 import CreditCardServicebox from '../Services/CreditCardServicebox';
+import Bot from '../Bot/bot';
 const CreditCard = () => {
   return (
     <div>
@@ -52,6 +53,7 @@ const CreditCard = () => {
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />
+        <Bot/>
     </div>
   );
 };

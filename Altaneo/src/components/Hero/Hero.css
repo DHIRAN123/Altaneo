@@ -114,3 +114,21 @@ h1, p {
     object-fit: cover; /* Make sure the video covers the entire area */
     z-index: -1; /* Put the video behind other content */
 }
+
+/* media query
+ */
+
+ @media (max-width: 650px) {
+    .hero-text {
+        max-width: 300px; /* Adjusted maximum width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 11px; /* Reduced font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 10px; /* Reduced font size for smaller screens */
+        max-width: 250px; /* Adjusted maximum width for even smaller screens */
+    }
+}

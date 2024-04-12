@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Title from '../Title/Title';
 import './RefundPolicy.css';
+import Bot from '../Bot/bot';
 
 const RefundPolicy = () => {
   return (
@@ -66,6 +67,7 @@ const RefundPolicy = () => {
         </div>
       </div>
       <Footer />
+      <Bot/>
     </div>
   );
 };
