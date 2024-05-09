@@ -46,3 +46,15 @@ a {
 body {
     overflow-x: hidden;
 }
+
+body {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  

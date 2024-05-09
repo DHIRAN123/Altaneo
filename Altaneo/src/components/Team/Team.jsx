@@ -7,28 +7,28 @@ const Team = () => {
       <div className="row my-5">
         <div className="col-md-4 col-sm-6">
           <div className="box">
-            <img src="http://www.webcoderskull.com/img/team1.png" alt="Developer" />
+            <img src="http://www.webcoderskull.com/img/team1.png" alt="Director" />
             <div className="box-content">
-              <h3 className="title">Dhiran M.</h3>
-              <span className="post"> Junior Developer</span>
+              <h3 className="title">Sonali</h3>
+              <span className="post"> Director </span>
             </div>
           </div>
         </div>
         <div className="col-md-4 col-sm-6">
           <div className="box">
-            <img src="http://www.webcoderskull.com/img/team2.png" alt="" />
+            <img src="http://www.webcoderskull.com/img/team2.png" alt="CEO" />
             <div className="box-content">
-              <h3 className="title"><a href="https://www.linkedin.com/in/dhiran-madhukar-5b9086172/" target='blank'>Meenakshi P.</a></h3>
+              <h3 className="title"><a href="" target='blank'>Meenakshi P.</a></h3>
               <span className="post">CEO</span>
             </div>
           </div>
         </div>
         <div className="col-md-4 col-sm-6">
           <div className="box">
-            <img src="http://www.webcoderskull.com/img/team4.png" alt="" />
+            <img src="http://www.webcoderskull.com/img/team4.png" alt="CTA" />
             <div className="box-content">
-              <h3 className="title"><a href="https://www.linkedin.com/in/dhiran-madhukar-5b9086172/" target='blank'>Devinder </a></h3>
-              <span className="post">CTO</span>
+              <h3 className="title"><a href="" target='blank'>Jyotika B.</a></h3>
+              <span className="post">CTA</span>
             </div>
           </div>
         </div>

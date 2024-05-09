@@ -12,9 +12,12 @@ import BothScreens from '../Screens/BothScreens';
 import Bot from '../Bot/bot';
 
 
+
 const InvoiceDiscountingPage = () => {
   return (
+    
     <div className="invoice-discounting-container">
+      
       <div className="container">
         <Title subTitle="Altaneo For Bill Discounting" title="We Offer Wide Ranges" />
 
@@ -43,10 +46,11 @@ const InvoiceDiscountingPage = () => {
             <p className="card-text">Gain insights and control over your expenses with Altaneo's corporate credit card solutions. Track spending, monitor transactions, and optimize cash flow with advanced expense management tools.</p>
           </div>
         </div>
-    
+        
+  {/* <div className='bothscreen'>
 
         <BothScreens/>
-    
+        </div> */}
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
         <Numbers />
         <Services/>

@@ -29,7 +29,7 @@ const Footer = () => {
                   <a href="/"><img src={logo} className="img-fluid" alt="logo" /></a>
                 </div>
                 <div className="footer-text">
-                  <p>Empowering Growth Through Seamless Financial Solutions</p>
+                  <p>Empowering Growth Through Seamless <br/>Financial Solutions</p>
                 </div>
                 <div className="footer-social-icon">
                   <span>Follow us</span>
@@ -44,8 +44,9 @@ const Footer = () => {
             <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
               <div className="footer-widget">
                 <div className="footer-widget-heading">
+                  <div className='right-footer'>
                   <h3>Useful links</h3>
-                </div>
+                
                 <ul>
                   <li><a href="/Invoice-Discounting">Invoice Discounting</a></li>
                   <li><a href="/">Vendor</a></li>
@@ -58,6 +59,8 @@ const Footer = () => {
                   <li></li>
                   <li><a href="#">Latest News</a></li>
                 </ul>
+                </div>
+                </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
@@ -68,8 +71,8 @@ const Footer = () => {
                 <div className="footer-text mb-25">
   <p>Nodal Officer:-</p>
   <p>Meenakshi Pawar</p>
-  <p>+91 123456789</p>
-  <p><a href="mailto:Email@gmail.com">info@altaneo.com</a></p>
+  <p>+91 9817741345</p>
+  <p><a href="mailto:Email@gmail.com">info@altaneofin.in</a></p>
 </div>
               </div>
             </div>

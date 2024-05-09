@@ -1,6 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import investor1 from '../../assets/investor1.png';
+
 import five from '../../assets/five.png';
 import four from '../../assets/four.png';
 import nine from '../../assets/nine.png';
@@ -13,9 +13,7 @@ const Investors = () => {
     <div className="marquee-container">
     
       <Marquee direction="right">
-        <div className="image_wrapper">
-          <img src={investor1} alt="" />
-        </div>
+        
         <div className="image_wrapper">
           <img src={five} alt="" />
         </div>

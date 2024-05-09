@@ -21,9 +21,10 @@ import Privacypolicy from './components/PrivacyPolicy/Privacypolicy';
 import RefundPolicy from './components/Refund/RefundPolicy';
 import Terms from './components/Terms/Terms';
 import Bot from './components/Bot/bot';
-
-
-
+import Blogs from './components/Blogs/Blogs';
+import Dashboard from './components/Dashboard/Dashboard';
+import subBlog from './components/Blogs/subBlog';
+import TeamPage from './components/Team/TeamPage';
 
 
 
@@ -34,6 +35,7 @@ const App = () => {
         <Switch>
           {/* Routes for pages without Navbar */}
           <Route path={['/login', '/register']} component={Login} />
+          <Route path={['/Dashboard']} component={Dashboard} />
 
           {/* Routes for pages with Navbar */}
           <Route>
@@ -47,6 +49,9 @@ const App = () => {
               <Route exact path='/Privacypolicy' component={Privacypolicy} />
               <Route exact path='/Refundpolicy' component={RefundPolicy} />
               <Route exact path='/Terms' component={Terms} />
+              <Route exact path='/Blogs' component={Blogs} />
+              <Route exact path='/blog/:id' component={subBlog} />
+              <Route exact path='/TeamPage' component={TeamPage} />
             </Switch>
           </Route>
         </Switch>

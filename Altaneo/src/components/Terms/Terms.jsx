@@ -4,11 +4,15 @@ import Footer from '../Footer/Footer';
 import Title from '../Title/Title';
 import './Terms.css';
 
+
 const Terms = () => {
   return (
     <div>
+      
       <Navbar />
+
       <div className="Terms-container">
+
         <div className="terms-card">
           <Title subTitle="Terms" title="" />
         </div>
@@ -122,7 +126,7 @@ const Terms = () => {
         </div>
       </div>
       <Footer />
-      <Terms/>
+      
     </div>
   );
 };

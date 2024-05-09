@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import { Link as ScrollLink } from 'react-scroll';
-import menu_icon from '../../assets/menu-icon.png'
+import menu_icon from '../../assets/menu-icon.png';
+
 
 const Navbar = ({ onWorkingCapitalClick }) => {
   const [sticky, setSticky] = useState(false);
@@ -76,10 +77,15 @@ mobileMenu? setMobileMenu(false) : setMobileMenu(true);
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="container mt-5" smooth={true} offset={0} duration={500}>
-            Team
-          </ScrollLink>
+         
+        <a href="/TeamPage">
+              Team
+            </a>
         </li>
+        <li>
+        <a href="/Blogs">
+              Blogs
+            </a>        </li>
         <li>
           
               <ScrollLink to="contact" smooth={true} offset={0} duration={500}>

@@ -178,22 +178,27 @@ ul {
   margin: 0;
   font-size: 14px;
   color: #878787;
+
 }
 
 .copyright-text p a {
   color: #1491ff;
 }
-
-.footer-menu li {
-  display: inline-block;
-  margin-left: 30px;
+.footer-section .footer-menu ul {
+  padding: 0;
+  list-style: none;
 }
 
-.footer-menu li:hover a {
+.footer-section .footer-menu li {
+  display: inline-block;
+  margin-left: 15px; /* Adjust the margin as needed */
+}
+
+.footer-section .footer-menu li:hover a {
   color: #08449d;
 }
 
-.footer-menu li a {
+.footer-section .footer-menu li a {
   font-size: 14px;
   color: #878787;
 }
@@ -281,4 +286,11 @@ ul {
   .footer-menu li a {
     font-size: 12px;
   }
+  @media screen and (max-width: 768px) {
+    .right-footer {
+      display: none;
+    }
+  }
+  
 }
+

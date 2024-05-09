@@ -5,9 +5,11 @@ import Title from '../Title/Title';
 import './RefundPolicy.css';
 import Bot from '../Bot/bot';
 
+
 const RefundPolicy = () => {
   return (
     <div>
+      
       <Navbar />
       <div className="refund-policy-container">
         <div className="refund-policy-card">

@@ -12,6 +12,7 @@ import Bot from '../Bot/bot';
 const ExportCredits = () => {
   return (
     <div>
+      
       <div className='container'>
         <Title subTitle='Why Altaneo For Export Credits' title='We Offer Wide Ranges' />
 

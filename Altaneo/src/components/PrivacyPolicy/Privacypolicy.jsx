@@ -7,9 +7,11 @@ import './Privacypolicy.css';
 import Title from '../Title/Title';
 import Bot from '../Bot/bot';
 
+
 const Privacypolicy = () => {
   return (
     <div>
+      
       <Navbar />
       <div className="privacy-policy-container">
         <div className="privacy-policy-card">

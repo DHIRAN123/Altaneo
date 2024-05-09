@@ -36,11 +36,11 @@ const Testimonials = () => {
               <div className='user-info'>
                 <img src={user_1} alt='' />
                 <div>
-                  <h3>Meenakshi pawar</h3>
-                  <span>Gurugram, Haryana</span>
+                  <h3>CA Deepak Goel</h3>
+                  <span>Sahil international PNP</span>
                 </div>
               </div>
-              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
+              <p>Our experience with Altaneo has been nothing short of fantastic. Their invoice discounting platform is straightforward and transparent, allowing us to access funds quickly and easily. The team is knowledgeable, responsive, and always goes above and beyond to meet our needs. Further also guide us how to get best Rate of Interest and a great deal. Thanks to them, we've been able to overcome cash flow challenges.</p>
             </div>
           </li>
           <li>
@@ -48,8 +48,8 @@ const Testimonials = () => {
               <div className='user-info'>
                 <img src={user_2} alt='' />
                 <div>
-                  <h3>Meenakshi pawar</h3>
-                  <span>Gurugram, Haryana</span>
+                  <h3>CA gaurav Dhamija</h3>
+                  <span>Sahil international PNP</span>
                 </div>
               </div>
               <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
@@ -60,11 +60,11 @@ const Testimonials = () => {
               <div className='user-info'>
                 <img src={user_3} alt='' />
                 <div>
-                  <h3>Meenakshi pawar</h3>
-                  <span>Gurugram, Haryana</span>
+                  <h3>Vinod Kumar</h3>
+                  <span>Gr Constuctions</span>
                 </div>
               </div>
-              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
+              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the construction space who are facing working capital problems to give Altaneo a shot. Their expertise and support have made a significant difference in our operations, and we're grateful for their assistance.</p>
             </div>
           </li>
           <li>
@@ -72,11 +72,11 @@ const Testimonials = () => {
               <div className='user-info'>
                 <img src={user_4} alt='' />
                 <div>
-                  <h3>Meenakshi pawar</h3>
-                  <span>Gurugram, Haryana</span>
+                  <h3>Siddhant kansal</h3>
+                  <span>Kensons and co.</span>
                 </div>
               </div>
-              <p>Altaneo has been instrumental in helping us meet our working capital requirements. I, for one, would definitely recommend all vendors in the textile space who are facing working capital problems to give Altaneo a shot.</p>
+              <p>"Altaneo has been pivotal in our bag manufacturing venture, providing essential assistance with our working capital needs. Their expertise and support have made a significant impact on our operations, and I wholeheartedly recommend their services to others in the industry facing similar challenges."</p>
             </div>
           </li>
         </ul>

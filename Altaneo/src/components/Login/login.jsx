@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import styles from './login.module.css'; // Import CSS module
-import VideoContainer from './VideoContainer'; // Import VideoContainer component
+import styles from './login.module.css'; 
+import VideoContainer from './VideoContainer';
 
 const Login = () => {
   const [loginType, setLoginType] = useState('mobile'); 
   const [mobileNumber, setMobileNumber] = useState(''); 
-  const [otp, setOtp] = useState(''); // State for OTP input
-  const [showOtpInput, setShowOtpInput] = useState(false); // State to control showing OTP input
+  const [otp, setOtp] = useState(''); 
+  const [showOtpInput, setShowOtpInput] = useState(false); 
 
   const handleLoginTypeChange = (type) => {
     setLoginType(type);
@@ -18,7 +18,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowOtpInput(true); // Show OTP input
+    setShowOtpInput(true); 
   };
 
   const handleOtpChange = (e) => {
@@ -27,15 +27,15 @@ const Login = () => {
 
   const handleOtpSubmit = (e) => {
     e.preventDefault();
-    // Your OTP verification logic here
+    
     console.log('Verifying OTP:', otp);
-    // Reset OTP input
+    
     setOtp('');
   };
 
   return (
     <div className={styles.loginContainer}>
-      <VideoContainer /> {/* Include VideoContainer component */}
+      <VideoContainer />
       <div className={styles.loginFormContainer}>
         <h2>Login To Be Altaneofied</h2>
         {/* <div className={styles.loginTypeButtons}>

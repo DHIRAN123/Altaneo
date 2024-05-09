@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     background: url('../../assets/video.mp4');
+   
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: left;
     padding: 0 20px; 
+
 }
 
 .hero-text {

@@ -10,9 +10,12 @@ import Partner from '../Partners/Partners';
 import DualPaneLayout from '../DualPaneLayout/DualPaneLayout';
 import CreditCardServicebox from '../Services/CreditCardServicebox';
 import Bot from '../Bot/bot';
+
 const CreditCard = () => {
   return (
+    
     <div>
+    
       <div className='credit-card-container'>
         <Title subTitle='Credit Cards' title='Simplify Your Business Expenses' />
 
@@ -41,9 +44,9 @@ const CreditCard = () => {
         </div>
 
       </div>
-      <Title subTitle='Introducing Altaneo: Revolutionizing Corporate Spending' title='' />
+      {/* <Title subTitle='Introducing Altaneo: Revolutionizing Corporate Spending' title='' />
         
-      <DualPaneLayout/>
+      <DualPaneLayout/> */}
       <CreditCardServicebox/>
       <Title subTitle='Businesses Altaneofied' title='Where are you?' />
         <Partner />

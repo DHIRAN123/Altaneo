@@ -8,9 +8,11 @@ import Footer from '../Footer/Footer';
 import './VendorFinancing.css'; 
 import VendorServices from '../Services/VendorServices';
 import Bot from '../Bot/bot';
+
 const VendorFinancing = () => {
   return (
     <div>
+      
       <div className='vendor-financing-container'>
         <Title subTitle='Vendor Financing' title='Empower Your Supply Chain' />
 
