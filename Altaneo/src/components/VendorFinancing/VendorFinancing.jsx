@@ -2,7 +2,7 @@
 import React from 'react';
 import Title from '../Title/Title';
 import Partner from '../Partners/Partners';
-import Numbers from '../Customerbasenumber/Numbers';
+// import Numbers from '../Customerbasenumber/Numbers';
 import Touch from '../Touch/Touch';
 import Footer from '../Footer/Footer';
 import './VendorFinancing.css'; 
@@ -43,7 +43,7 @@ const VendorFinancing = () => {
         <Title subTitle='Businesses Altaneofied' title='Where are you?' />
         <Partner />
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
-        <Numbers />
+        {/* <Numbers /> */}
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />

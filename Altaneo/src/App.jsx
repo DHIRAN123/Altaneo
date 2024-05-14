@@ -5,7 +5,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Solutions from './components/Solutions/Solutions';
 import Title from './components/Title/Title';
-import Numbers from './components/Customerbasenumber/Numbers';
+// import Numbers from './components/Customerbasenumber/Numbers';
 import Testimonials from './components/Testimonials/Testimonials';
 import Touch from './components/Touch/Touch';
 import Footer from './components/Footer/Footer';
@@ -69,8 +69,8 @@ const Home = () => (
      
       <About />
       
-      <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
-      <Numbers />
+      {/* <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' /> */}
+      {/* <Numbers /> */}
       <Title subTitle='Leading Investors ' title='Valued From leading brands' />
       <Investors/>
       <Title subTitle='Meet our team' title='Team' />

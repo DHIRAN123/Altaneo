@@ -1,6 +1,6 @@
 import React from 'react';
-import './TeamPage.css'; // Import CSS file for styling
-import ceomam from '../../assets/ceomam.png'; // Import the image directly
+import './TeamPage.css'; 
+import ceomam from '../../assets/ceomam.png'; 
 import Footer from '../Footer/Footer';
 
 const TeamPage = () => {
@@ -9,7 +9,7 @@ const TeamPage = () => {
     {
       name: 'Meenakshi pawar',
       role: 'Founder & CEO ',
-      description: 'John is a talented software engineer with expertise in web development.',
+      description: 'Meenakshi Pawar has experience in finance domain',
       photo: ceomam 
     },
     {
@@ -42,18 +42,7 @@ const TeamPage = () => {
       description: 'IT Guy',
       photo:ceomam 
     },
-    {
-      name: 'Pranav',
-      role: 'Developer',
-      description: 'IT Guy',
-      photo:ceomam 
-    },
-    {
-      name: 'Abhishek ',
-      role: 'Developer',
-      description: 'IT Guy',
-      photo:ceomam 
-    },
+
     {
       name: 'Himanshu',
       role: 'Developer',
@@ -75,11 +64,12 @@ const TeamPage = () => {
       ];
 
   return (
+    <>
     <div className="team-container">
       {teamMembers.map((member, index) => (
         <div key={index} className="team-member">
           <div className="team-member-photo">
-            <img src={member.photo} alt={member.name} /> {/* Use imported image directly */}
+            <img src={member.photo} alt={member.name} /> 
           </div>
           <div className="team-member-details">
             <h3>{member.name}</h3>
@@ -88,10 +78,9 @@ const TeamPage = () => {
           </div>
         </div>
     ))}
-    <Footer/>
-      
     </div>
-    
+    <Footer/>
+    </>
   );
 }
 

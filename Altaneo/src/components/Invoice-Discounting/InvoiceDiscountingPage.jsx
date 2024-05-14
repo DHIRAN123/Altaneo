@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Touch from '../Touch/Touch';
-import Numbers from '../Customerbasenumber/Numbers';
+// import Numbers from '../Customerbasenumber/Numbers';
 import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
@@ -52,7 +52,7 @@ const InvoiceDiscountingPage = () => {
         <BothScreens/>
         </div> */}
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
-        <Numbers />
+        {/* <Numbers /> */}
         <Services/>
         <Title subTitle="Businesses Altaneofied" title="Where are you?" />
 

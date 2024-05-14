@@ -1,6 +1,6 @@
 import React from 'react';
 import Touch from '../Touch/Touch';
-import Numbers from '../Customerbasenumber/Numbers';
+// import Numbers from '../Customerbasenumber/Numbers';
 import Title from '../Title/Title';
 import Footer from '../Footer/Footer';
 import Partner from '../Partners/Partners';
@@ -74,7 +74,7 @@ const ExportCredits = () => {
         <Partner />
         <ExportCreditService/>
         <Title subTitle='Committed Numbers ' title='Satisfied Base Customers' />
-        <Numbers />
+        {/* <Numbers /> */}
         <Title subTitle='Contact Us' title='Get in Touch' />
         <Touch />
         <Footer />
